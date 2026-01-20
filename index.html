@@ -239,10 +239,14 @@ function sparkle(cell){
 }
 </script>
 
+<!-- ✅ 서비스워커 등록 (쿼리스트링 없이, 정답 방식) -->
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js");
+  });
+}
+</script>
+
 </body>
 </html>
-
-
-
-
-
