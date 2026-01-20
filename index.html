@@ -30,13 +30,13 @@ body{
 .title-wrap{
   position:relative;
   display:inline-block;
-  padding-top:0;
-  margin-top:-150px; /* 제목 전체 위로 */
+  padding-top:22px;
 }
 
+/* ⬇️ 제물포권 : (영) 바로 위 */
 .top-center{
   position:absolute;
-  top:0;                    /* 제물포권 다시 보이게 */
+  top:-4px;
   left:50%;
   transform:translateX(-50%);
   font-family:'Poor Story', cursive;
@@ -78,17 +78,19 @@ body{
   background:#fff;
   border:2px solid #ffd27d;
   border-radius:14px;
-  padding:6px 10px;
+  padding:6px 12px;
 }
 
 .flower{font-size:18px;margin-right:6px;}
 
+/* ⬇️ 이름입력 글씨 왼쪽으로 3칸 */
 .name-input{
   border:none;
   outline:none;
   font-size:15px;
-  width:110px;   /* ⬅️ 가로폭 약 2cm 줄임 */
-  text-align:center;
+  width:110px;
+  text-align:left;
+  padding-left:6px;
 }
 
 .guide{font-size:13px;}
@@ -177,7 +179,7 @@ body{
 <div class="name-box">
   <div class="name-wrap">
     <div class="flower">🌷</div>
-    <input class="name-input" id="nameInput" placeholder="이름 입력">
+    <input class="name-input" id="nameInput" placeholder="이름입력">
   </div>
 </div>
 
