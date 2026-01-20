@@ -31,10 +31,11 @@ body{
 /* 제목 영역 */
 .title-wrap{
   position:relative;
+  display:inline-block;
   margin-top:10px;
 }
 
-/* 제물포권 (위치 그대로) */
+/* 제물포권 (그대로 유지) */
 .top-center{
   font-family:'Poor Story', cursive;
   font-size:16px;
@@ -42,9 +43,9 @@ body{
   white-space:nowrap;
 }
 
-/* ⬇️ 전체 한 줄 내려주는 래퍼 */
-.shift-down{
-  margin-top:16px; /* ✅ 한 줄 내려줌 */
+/* ⬇️ 전체 반 칸 위로 */
+.shift-up{
+  margin-top:-8px; /* 반 칸 */
 }
 
 /* 메인 제목 */
@@ -52,6 +53,7 @@ body{
   font-family:'Poor Story', cursive;
   font-size:26px;
   font-weight:bold;
+  margin-top:4px;
   margin-bottom:6px;
 }
 
@@ -71,7 +73,7 @@ body{
 
 /* 이름 입력 */
 .name-box{
-  margin:18px 0;
+  margin:16px 0;
   display:flex;
   justify-content:center;
 }
@@ -82,21 +84,22 @@ body{
   background:#fff;
   border:2px solid #ffd27d;
   border-radius:14px;
-  padding:6px 12px;
-  max-width:260px;
-  width:100%;
+  padding:6px 10px;
+  width:140px;          /* ✅ 기존 대비 반으로 */
 }
 
-.flower{font-size:18px;margin-right:6px;}
+.flower{
+  font-size:18px;
+  margin-right:4px;
+}
 
 .name-input{
   flex:1;
   border:none;
   outline:none;
-  font-size:15px;
-  min-width:90px;
-  padding:6px;
-  margin-left:4px;
+  font-size:14px;
+  min-width:60px;
+  padding:4px;
   background:#fff;
 }
 
@@ -166,7 +169,7 @@ body{
 .notice{
   font-size:15px;
   margin-top:10px;
-  line-height:1.2;
+  line-height:1.25;
 }
 
 .notice-date{
@@ -183,8 +186,7 @@ body{
 <div class="title-wrap">
   <div class="top-center">&lt;제물포권&gt;</div>
 
-  <!-- ⬇️ 여기부터 전부 한 줄 내려감 -->
-  <div class="shift-down">
+  <div class="shift-up">
 
     <div class="main-title">🌸 (영)무궁화꽃이 피었습니다 🌸</div>
 
